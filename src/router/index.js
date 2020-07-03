@@ -69,5 +69,19 @@ export default new VueRouter({
                 }]
             }
         },
+        {
+            path: '/star',
+            name: 'star',
+            component: () => import('../views/Star.vue'),
+            meta: {
+                breadcrumb: [{
+                    name: 'index',
+                    link: 'home'
+                },
+                {
+                    name: 'Star'
+                }]
+            }
+        },
     ]
 })
